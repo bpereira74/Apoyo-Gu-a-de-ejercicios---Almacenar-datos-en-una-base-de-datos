@@ -1,0 +1,15 @@
+<%= form_with model: @post, method: :post do  |form| %>
+    <div>
+        <%= form.label :title, "Post Title" %>
+        <%= form.text_field :title %>
+    </div>
+
+    <div>
+        <%= form.label :content, "Post Content" %>
+        <%= form.text_field :content %>
+    </div>
+    
+    <div>
+       <%= form.submit %>
+    </div>
+<% end %>
